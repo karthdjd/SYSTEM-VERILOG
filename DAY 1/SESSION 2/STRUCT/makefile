@@ -1,11 +1,11 @@
 compile:
 			vlib work
-			vlog -sv emp_info.sv
+			vlog -sv struct1.sv
 
 simulate:
-			vsim emp_info -l emp_info_output.log -c -do "run -all; exit;"
+			vsim struct1 -l struct1_output.log -c -do "run -all; exit;"
 
 all:
 	vlib work
-	vlog -sv emp_info.sv
-	vsim emp_info -l emp_info_output.log -c -do "run -all; exit;"
+	vlog -sv struct1.sv
+	vsim struct1 -l struct1_output.log -c -do "run -all; exit;"
