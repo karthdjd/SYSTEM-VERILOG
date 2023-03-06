@@ -11,11 +11,11 @@ class home;
     $display("\t switch is %0s so electricity is open",switch);  
   endtask:open_electricity  
 
-endclass:home
+endclass
 
 module check_electricity;  
 
-  initial begin:BEGIN_I  
+  initial begin
     home h1;   
     h1=new();   
     h1.light=1;  
@@ -24,6 +24,6 @@ module check_electricity;
     h1.open_electricity;  
     $display("\t light is %0d(ON) and fan is also %0d(ON)",h1.light,h1.fan);
     $display("");
-  end:BEGIN_I
+  end
 
 endmodule
