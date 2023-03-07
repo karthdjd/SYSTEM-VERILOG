@@ -28,7 +28,7 @@ class child2 extends parent;
     endfunction
   endclass
 
-module poly_ex();
+module poly();
 
   parent p1[1:0];
   child1 c;
