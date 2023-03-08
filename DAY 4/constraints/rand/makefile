@@ -1,5 +1,5 @@
 compile:
-		vlib work;
+		vlib work
 			vlog -sv rand.sv
 
 simulate:
@@ -7,6 +7,6 @@ simulate:
 
 all:
 
-		vlib work;
+		vlib work
 			vlog -sv rand.sv
 		vsim rand_var -l rand_log.log -c -do "run -all; exit;"
